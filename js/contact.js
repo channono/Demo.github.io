@@ -7,23 +7,32 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Get form values
             const formData = {
-                name: document.getElementById('customname').value,
-                email: document.getElementById('customemail').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('custommessagetext').value
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('topic').value,
+                message: document.getElementById('message').value
             };
 
             // Disable submit button and show loading state
-            const submitButton = document.getElementById('sendMessage');
+            const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalText = submitButton.innerHTML;
             submitButton.disabled = true;
             submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> ' + 
                                    i18next.t('contact.sending');
 
             try {
-                // Here you would typically send the data to your server
-                // For now, we'll simulate a server delay
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                // Send data to backend server
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
 
                 // Show success message
                 alert(i18next.t('contact.messageSent'));
@@ -31,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Reset form
                 contactForm.reset();
             } catch (error) {
+                console.error('Error sending message:', error);
                 // Show error message
                 alert(i18next.t('contact.errorSending'));
             } finally {

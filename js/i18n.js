@@ -5,12 +5,9 @@ const i18n = {
         if (this.initialized) {
             return;
         }
-        console.log('Initializing i18next...');
         try {
             // Get saved language from localStorage
             const savedLang = localStorage.getItem('language') || 'en';
-            console.log('Saved language:', savedLang);
-
             await i18next
                 .use(i18nextBrowserLanguageDetector)
                 .init({
@@ -49,9 +46,9 @@ const i18n = {
             });
             
             this.initialized = true;
-            console.log('i18next initialized successfully');
-            console.log('Current language:', i18next.language);
-            console.log('Available languages:', i18next.languages);
+            //console.log('i18next initialized successfully');
+            //console.log('Current language:', i18next.language);
+           // console.log('Available languages:', i18next.languages);
         } catch (error) {
             console.error('Error initializing i18next:', error);
         }
