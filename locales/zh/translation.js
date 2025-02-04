@@ -510,95 +510,88 @@ const zhTranslation = {
         "freelance": {
             "meta_title": "ABB Freelance DCS - 过程自动化系统",
             "meta_description": "ABB Freelance分布式控制系统 - 灵活且可扩展的过程自动化解决方案",
-            "title": "ABB Freelance DCS",
-            "subtitle": "灵活且可扩展的分布式控制系统，专为过程自动化设计",
-            "requestInfo": "请求信息",
-            "features": {
-                "title": "主要特点",
-                "processControl": {
-                    "title": "过程控制",
-                    "items": [
-                        "直观操作",
-                        "过程优化",
-                        "批次控制",
-                        "配方管理"
-                    ]
+            "title": "ABB Freelance",
+            "subtitle": "专为中小型应用设计的灵活可扩展分布式控制系统，实现最大效率",
+            "cta": "获取信息",
+            "benefits": {
+                "title": "主要优势",
+                "easyConfig": {
+                    "title": "简易配置",
+                    "items": {
+                        "0": "直观的工程工具",
+                        "1": "快速项目设置",
+                        "2": "拖放式编程",
+                        "3": "预建功能块"
+                    }
                 },
-                "systemArchitecture": {
-                    "title": "系统架构",
-                    "items": [
-                        "可扩展架构",
-                        "集成安全性",
-                        "灵活配置",
-                        "高可用性"
-                    ]
+                "safety": {
+                    "title": "集成安全",
+                    "items": {
+                        "0": "SIL2/3认证",
+                        "1": "安全逻辑集成",
+                        "2": "冗余选项",
+                        "3": "容错能力"
+                    }
                 },
-                "engineering": {
-                    "title": "工程设计",
-                    "items": [
-                        "易于维护",
-                        "快速配置",
-                        "模块化设计",
-                        "无缝集成"
-                    ]
+                "monitoring": {
+                    "title": "远程监控",
+                    "items": {
+                        "0": "基于Web访问",
+                        "1": "移动集成",
+                        "2": "实时警报",
+                        "3": "安全连接"
+                    }
                 }
             },
             "technicalDetails": {
                 "title": "技术规格",
-                "controllerTypes": {
-                    "title": "控制器类型",
-                    "value": "AC900F, AC800F"
-                },
-                "ioCapacity": {
-                    "title": "I/O容量",
-                    "value": "最多支持100,000个I/O点"
-                },
-                "communicationProtocols": {
-                    "title": "通信协议",
-                    "value": "PROFIBUS DP, Modbus RTU/TCP, IEC 60870-5-104"
-                },
-                "programming": {
-                    "title": "编程",
-                    "value": "符合IEC 61131-3标准"
-                },
-                "hmi": {
-                    "title": "人机界面",
-                    "value": "Freelance 2024，包含工程师站和操作员站"
-                }
+                "controllerTypes": "控制器类型",
+                "controllerTypesValue": "AC900F, AC800F",
+                "ioCapacity": "I/O容量",
+                "ioCapacityValue": "最多100,000个I/O点",
+                "protocols": "通信协议",
+                "protocolsValue": "PROFIBUS DP, Modbus RTU/TCP, IEC 60870-5-104",
+                "programming": "编程",
+                "programmingValue": "符合IEC 61131-3标准",
+                "hmi": "人机界面",
+                "hmiValue": "Freelance 2024工程师站和操作员站"
             },
-            "industryApplications": {
+            "applications": {
                 "title": "行业应用",
-                "waterTreatment": {
+                "water": {
                     "title": "水处理",
-                    "description": "为水处理和污水处理设施提供完整的自动化解决方案。"
+                    "description": "水和废水处理设施的完整自动化解决方案"
                 },
-                "foodBeverage": {
+                "food": {
                     "title": "食品饮料",
-                    "description": "食品生产线的过程控制和监控。"
+                    "description": "食品生产线的过程控制和监控"
                 },
-                "buildingAutomation": {
+                "building": {
                     "title": "楼宇自动化",
-                    "description": "集成的楼宇管理和控制系统。"
+                    "description": "集成楼宇管理和控制系统"
                 },
-                "pharmaceuticals": {
-                    "title": "制药行业",
-                    "description": "制药生产过程的精确控制。"
+                "pharma": {
+                    "title": "制药",
+                    "description": "制药制造过程的精确控制"
                 }
             },
             "caseStudy": {
-                "title": "水处理厂现代化改造",
-                "description": "某市政水处理厂在实施ABB Freelance系统后，实现了30%的能源节省和25%的运营成本降低。解决方案包括：",
-                "items": [
-                    "完整的过程自动化",
-                    "实时监控",
-                    "预测性维护实施",
-                    "远程操作功能"
-                ]
+                "title": "成功案例",
+                "waterTreatment": {
+                    "title": "水处理厂现代化",
+                    "description": "某市政水处理设施在实施ABB Freelance系统后，实现了30%的节能和25%的运营成本降低。解决方案包括：",
+                    "benefits": {
+                        "0": "完整的过程自动化",
+                        "1": "实时监控和控制",
+                        "2": "预测性维护实施",
+                        "3": "远程操作功能"
+                    }
+                }
             },
             "callToAction": {
                 "title": "准备优化您的过程控制？",
-                "description": "让我们帮助您根据具体应用需求实施ABB Freelance系统。",
-                "button": "立即联系我们"
+                "description": "让我们帮助您根据具体应用需求实施ABB Freelance",
+                "cta": "立即联系我们"
             }
         },
         "system800xa": {
