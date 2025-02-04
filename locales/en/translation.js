@@ -403,95 +403,88 @@ const enTranslation = {
         "freelance": {
             "meta_title": "ABB Freelance DCS - Process Automation System",
             "meta_description": "ABB Freelance distributed control system - A flexible and scalable solution for process automation",
-            "title": "ABB Freelance DCS",
-            "subtitle": "Flexible and scalable distributed control system for process automation",
-            "requestInfo": "Request Information",
-            "features": {
-                "title": "Key Features",
-                "processControl": {
-                    "title": "Process Control",
-                    "items": [
-                        "Intuitive Operation",
-                        "Process Optimization",
-                        "Batch Control",
-                        "Recipe Management"
-                    ]
+            "title": "ABB Freelance",
+            "subtitle": "A flexible and scalable distributed control system designed for maximum efficiency in small to medium-sized applications",
+            "cta": "Get Information",
+            "benefits": {
+                "title": "Key Benefits",
+                "easyConfig": {
+                    "title": "Easy Configuration",
+                    "items": {
+                        "0": "Intuitive Engineering Tools",
+                        "1": "Quick Project Setup",
+                        "2": "Drag-and-Drop Programming",
+                        "3": "Pre-built Function Blocks"
+                    }
                 },
-                "systemArchitecture": {
-                    "title": "System Architecture",
-                    "items": [
-                        "Scalable architecture",
-                        "Integrated safety",
-                        "Flexible configuration",
-                        "High availability"
-                    ]
+                "safety": {
+                    "title": "Integrated Safety",
+                    "items": {
+                        "0": "SIL2/3 Certified",
+                        "1": "Safety Logic Integration",
+                        "2": "Redundancy Options",
+                        "3": "Fault Tolerance"
+                    }
                 },
-                "engineering": {
-                    "title": "Engineering",
-                    "items": [
-                        "Easy maintenance",
-                        "Quick configuration",
-                        "Modular design",
-                        "Seamless integration"
-                    ]
+                "monitoring": {
+                    "title": "Remote Monitoring",
+                    "items": {
+                        "0": "Web-based Access",
+                        "1": "Mobile Integration",
+                        "2": "Real-time Alerts",
+                        "3": "Secure Connectivity"
+                    }
                 }
             },
             "technicalDetails": {
-                "title": "Technical Details",
-                "controllerTypes": {
-                    "title": "Controller Types",
-                    "value": "AC900F, AC800F"
-                },
-                "ioCapacity": {
-                    "title": "I/O Capacity",
-                    "value": "Up to 100,000 I/O points"
-                },
-                "communicationProtocols": {
-                    "title": "Communication Protocols",
-                    "value": "PROFIBUS DP, Modbus RTU/TCP, IEC 60870-5-104"
-                },
-                "programming": {
-                    "title": "Programming",
-                    "value": "IEC 61131-3 compliant"
-                },
-                "hmi": {
-                    "title": "HMI",
-                    "value": "Freelance 2024 with Engineer station & Operator station"
-                }
+                "title": "Technical Specifications",
+                "controllerTypes": "Controller Types",
+                "controllerTypesValue": "AC900F, AC800F",
+                "ioCapacity": "I/O Capacity",
+                "ioCapacityValue": "Up to 100,000 I/O points",
+                "protocols": "Communication Protocols",
+                "protocolsValue": "PROFIBUS DP, Modbus RTU/TCP, IEC 60870-5-104",
+                "programming": "Programming",
+                "programmingValue": "IEC 61131-3 compliant",
+                "hmi": "HMI",
+                "hmiValue": "Freelance 2024 Engineering and Operations Workplaces"
             },
-            "industryApplications": {
+            "applications": {
                 "title": "Industry Applications",
-                "waterTreatment": {
+                "water": {
                     "title": "Water Treatment",
-                    "description": "Complete automation solutions for water and wastewater treatment facilities."
+                    "description": "Complete automation solutions for water and wastewater facilities"
                 },
-                "foodBeverage": {
+                "food": {
                     "title": "Food & Beverage",
-                    "description": "Process control and monitoring for food production lines."
+                    "description": "Process control and monitoring for food production lines"
                 },
-                "buildingAutomation": {
+                "building": {
                     "title": "Building Automation",
-                    "description": "Integrated building management and control systems."
+                    "description": "Integrated building management and control systems"
                 },
-                "pharmaceuticals": {
+                "pharma": {
                     "title": "Pharmaceuticals",
-                    "description": "Precise control for pharmaceutical manufacturing processes."
+                    "description": "Precise control for pharmaceutical manufacturing"
                 }
             },
             "caseStudy": {
-                "title": "Water Treatment Plant Modernization",
-                "description": "A municipal water treatment facility achieved 30% energy savings and 25% reduction in operational costs after implementing ABB Freelance system. The solution included:",
-                "items": [
-                    "Complete process automation",
-                    "Real-time monitoring and control",
-                    "Predictive maintenance implementation",
-                    "Remote operation capabilities"
-                ]
+                "title": "Success Story",
+                "waterTreatment": {
+                    "title": "Water Treatment Plant Modernization",
+                    "description": "A municipal water treatment facility achieved 30% energy savings and 25% reduction in operating costs after implementing ABB Freelance. The solution included:",
+                    "benefits": {
+                        "0": "Complete Process Automation",
+                        "1": "Real-time Monitoring and Control",
+                        "2": "Predictive Maintenance Implementation",
+                        "3": "Remote Operations Capability"
+                    }
+                }
             },
             "callToAction": {
                 "title": "Ready to Optimize Your Process Control?",
-                "description": "Let us help you implement ABB Freelance for your specific application needs.",
-                "button": "Contact Us Today"
+                "description": "Let us help you implement ABB Freelance for your specific application needs",
+                "cta": "Contact Us Now"
             }
         },
         "system800xa": {
