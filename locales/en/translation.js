@@ -972,15 +972,20 @@ const enTranslation = {
     },
     "form": {
         "name": "Your Name",
-        "email": "Your Email",
-        "message": "Your Message",
-        "selectTopic": "Select Topic",
-        "submit": "Submit",
         "namePlaceholder": "Enter your name",
+        "email": "Your Email",
         "emailPlaceholder": "Enter your email",
-        "messagePlaceholder": "Enter your message"
+        "selectTopic": "Select Topic",
+        "message": "Your Message",
+        "messagePlaceholder": "How can we help you?",
+        "submit": "Send Message"
     },
     "contact": {
+        "topic": {
+            "sales": "Sales",
+            "support": "Support",
+            "partnership": "Partnership"
+        },
         "title": "Get In Touch",
         "description": "Have questions about our solutions? Our team is here to help.",
         "selectSubject": "Select Subject",
