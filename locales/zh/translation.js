@@ -942,18 +942,26 @@ const zhTranslation = {
         }
     },
     "form": {
-        "name": "姓名",
-        "email": "电子邮箱",
-        "message": "留言内容",
+        "name": "您的姓名",
+        "namePlaceholder": "请输入姓名",
+        "email": "您的邮箱",
+        "emailPlaceholder": "请输入邮箱",
         "selectTopic": "选择主题",
-        "submit": "提交",
-        "namePlaceholder": "请输入您的姓名",
-        "emailPlaceholder": "请输入您的电子邮箱",
-        "messagePlaceholder": "请输入您的留言内容"
+        "message": "您的留言",
+        "messagePlaceholder": "我们如何帮助您？",
+        "submit": "发送留言"
     },
     "contact": {
+        "topic": {
+            "sales": "销售咨询",
+            "support": "技术支持",
+            "partnership": "希望合作"
+        },
         "title": "联系我们",
-        "description": "对我们的解决方案有疑问？我们的团队随时为您提供帮助。",
+        "description": "有任何问题？我们的团队随时为您服务。",
+        "sending": "发送中...",
+        "messageSent": "谢谢！您的消息已成功发送。",
+        "errorSending": "抱歉，发送消息时出现错误。请重试。",
         "selectSubject": "选择主题",
         "generalInquiry": "一般咨询",
         "technicalSupport": "技术支持",
