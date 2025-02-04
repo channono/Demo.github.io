@@ -8,8 +8,8 @@ const zhTranslation = {
         "blog": "博客"
     },
     "hero": {
-        "title": "现代工业智能控制解决方案",
-        "subtitle": "通过尖端自动化和控制系统改造您的工业运营",
+        "title": "数字化工业智能控制方案",
+        "subtitle": "以创新自动化技术助力工业数字化转型",
         "exploreSolutions": "探索解决方案",
         "contactUs": "联系我们",
         "yearsOfInnovation": "创新年限",
@@ -969,9 +969,8 @@ const zhTranslation = {
         "address": "上海，中国",
         "phone": "+86 021 6232 1520",
         "email": "466719205@qq.com",
-        "copyright": "2024 上海业控自动化设备有限公司 版权所有。",
+        "copyright": "2025 上海超控自动化有限公司。保留所有权利。",
         "privacyPolicy": "隐私政策",
-        "termsOfService": "服务条款",
-        "demoDisclaimer": "仅用于测试的演示网站"
+        "termsOfService": "服务条款"
     }
 };
