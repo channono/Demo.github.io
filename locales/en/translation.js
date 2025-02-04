@@ -22,7 +22,7 @@ const enTranslation = {
     },
     "about": {
         "title": "About SuperCTRL",
-        "description": "Founded in Shanghai, we specialize in transforming traditional manufacturing through advanced automation and intelligent control systems.",
+        "description": "Founded in Shanghai, SuperCTRL is a leading innovator in industrial automation and control systems. With over 20 years of expertise, we specialize in transforming traditional manufacturing through cutting-edge technology integration. Our solutions combine advanced PLC systems, intelligent sensors, and data analytics to optimize production efficiency and quality. We serve diverse industries including data center, pharmaceuticals, 3C,Semiconductor factory and smart manufacturing, helping businesses achieve energy optimization and production efficiency.",
         "years": "Years of Experience",
         "projects": "Projects",
         "engineers": "Engineers",
