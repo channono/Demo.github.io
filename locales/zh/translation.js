@@ -949,7 +949,14 @@ const zhTranslation = {
         "selectTopic": "选择主题",
         "message": "您的留言",
         "messagePlaceholder": "我们如何帮助您？",
-        "submit": "发送留言"
+        "submit": "发送留言",
+        "success": "留言发送成功！",
+        "error": "留言发送失败，请重试",
+        "invalidEmail": "请输入有效的邮箱地址",
+        "sending": "发送中...",
+        "allFieldsRequired": "请填写所有必填项",
+        "duplicateMessage": "请稍后再发送类似的留言",
+        "networkError": "网络错误，请检查网络连接后重试"
     },
     "contact": {
         "topic": {
@@ -961,7 +968,7 @@ const zhTranslation = {
         "description": "有任何问题？我们的团队随时为您服务。",
         "sending": "发送中...",
         "messageSent": "谢谢！您的消息已成功发送。",
-        "errorSending": "抱歉，发送消息时出现错误。请重试。",
+        "error": "抱歉，发送消息时出现错误。请重试。",
         "selectSubject": "选择主题",
         "generalInquiry": "一般咨询",
         "technicalSupport": "技术支持",
@@ -980,5 +987,50 @@ const zhTranslation = {
         "copyright": "2025 上海业控自动化设备有限公司。保留所有权利。",
         "privacyPolicy": "隐私政策",
         "termsOfService": "服务条款"
+    },
+    "blog": {
+        "title": "行业洞察",
+        "subtitle": "了解最新的行业趋势和创新",
+        "readMore": "阅读更多",
+        "recentPosts": "最近的文章",
+        "noPosts": "没有文章",
+        "browseByCategory": "浏览分类",
+        "latestArticles": "最新文章",
+        "featured":{
+            "title": "工业自动化的未来：智能工业和更多",
+            "description": "探讨智能工业如何改变制造过程，以及对您业务的意义。",
+        },
+        "categories":{
+            "sustainability": "可持续性",
+            "security": "工业网络安全",
+            "technology": "技术与工程",
+            "intelligentIndustry": "工业智能",
+            "industry": "工业智能",
+            "energy": "能源效率"
+        },
+        "newsletter":{
+            "title":"订阅我们的邮件列表",
+            "description":"订阅我们的邮件列表以获取最新的信息和更新。",
+            "emailPlaceholder":"请输入您的电子邮件地址",
+            "subscribe":"订阅",
+            "stayUpdated":"保持更新",
+            
+        },
+        "recentPosts":{ 
+            "smartManufacturing":{
+                "title":"智能制造：机器学习和人工智能的角色",
+                "description":"探索人工智能是如何变革制造流程的，以及它如何帮助您优化运营并降低成本。"
+            },
+            "energyEfficiency":{
+                "title":"能源效率：在工业过程中最大化能源效率",
+                "description":"了解最新的能源效率策略和它如何影响您的业务。"
+            },
+            "industrialCybersecurity":{
+                "title":"工业网络安全：AI在工业安全中的作用",
+                "description":"了解如何使用人工智能在工业安全中发挥作用，以及如何保护您的资产。"
+            }
+        }
     }
+
+
 };

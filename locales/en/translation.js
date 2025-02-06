@@ -977,15 +977,17 @@ const enTranslation = {
         "emailPlaceholder": "Enter your email",
         "selectTopic": "Select Topic",
         "message": "Your Message",
-        "messagePlaceholder": "How can we help you?",
-        "submit": "Send Message"
+        "messagePlaceholder": "Enter your message",
+        "submit": "Send Message",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again.",
+        "invalidEmail": "Please enter a valid email address",
+        "sending": "Sending...",
+        "allFieldsRequired": "All fields are required",
+        "duplicateMessage": "Please wait before sending another similar message",
+        "networkError": "Network error. Please check your connection and try again."
     },
     "contact": {
-        "topic": {
-            "sales": "Sales",
-            "support": "Support",
-            "partnership": "Partnership"
-        },
         "title": "Get In Touch",
         "description": "Have questions about our solutions? Our team is here to help.",
         "selectSubject": "Select Subject",
@@ -993,9 +995,18 @@ const enTranslation = {
         "technicalSupport": "Technical Support",
         "sales": "Sales",
         "sendMessage": "Send Message",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again.",
+        "invalidEmail": "Please enter a valid email address",
         "sending": "Sending...",
-        "messageSent": "Thank you! Your message has been sent successfully.",
-        "errorSending": "Sorry, there was an error sending your message. Please try again."
+        "allFieldsRequired": "All fields are required",
+        "duplicateMessage": "Please wait before sending another similar message",
+        "networkError": "Network error. Please check your connection and try again.",
+        "topic": {
+            "sales": "Sales Inquiry",
+            "support": "Technical Support",
+            "partnership": "Partnership"
+        }
     },
     "footer": {
         "contactInfo": "Contact Info",
@@ -1007,5 +1018,46 @@ const enTranslation = {
         "privacyPolicy": "Privacy Policy",
         "termsOfService": "Terms of Service",
         "demoDisclaimer": "Demo for testing purposes only"
+    },
+    "blog": {
+        "title": "Industry Insights",
+        "subtitle": "Stay updated with the latest trends and innovations in industrial automation",
+        "readMore": "Read More",
+        "browseByCategory": "Browse by Category",
+        "latestArticles": "Latest Articles",
+        "recentPosts": "最近的文章",
+        "noPosts": "没有文章",
+        "featured":{
+            "title": "The Future of Industrial Automation: Intelligent Industry and Beyond",
+            "description": "Explore how Intelligent Industry is revolutionizing manufacturing processes and what it means for your business.",
+        },
+        "categories":{
+            "sustainability": "Sustainability",
+            "security": "Industrial CyberSecurity",
+            "technology": "Innovation Technology",
+            "industry": "Intelligent Industry",
+            "intelligentIndustry": "Intelligent Industry",
+            "energy": "Energy Efficiency"
+        },
+        "newsletter":{
+            "title":"Subscribe to Our Mail List",
+            "description":"Subscribe to our mailing list to get the latest updates and news.",
+            "emailPlaceholder":"Enter your email address",
+            "subscribe":"Subscribe"
+        },
+        "recentPosts":{
+            "smartManufacturing":{
+                "title":"Smart Manufacturing: The Role of AI and Machine Learning",
+                "description":"Discover how artificial intelligence is transforming manufacturing processes and how it can help you optimize your operations and reduce costs."
+            },
+            "energyEfficiency":{
+                "title":"Energy Efficiency: Maximizing Energy Efficiency in Industrial Processes",
+                "description":"Learn about the latest strategies for reducing energy consumption and how it can impact your business."
+            },
+            "industrialCybersecurity":{
+                "title":"Industry Security: Protecting Your Assets with AI",
+                "description":"Unlock the full potential of AI in industrial security with our comprehensive guide."
+            }
+        }
     }
 }
