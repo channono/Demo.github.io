@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             });
     }
+    loadPosts();
 });
 
 // Save post function - Example implementation
@@ -110,6 +111,11 @@ function savePost() {
         tags: document.querySelector("#hiddenTags").value.split(","),
         content: document.querySelector("#hiddenContent").value
     };
-    // Save post to local storage or other client-side storage
-    // Example: localStorage.setItem('posts', JSON.stringify([...existingPosts, post]));
+
+    let posts = JSON.parse(localStorage.getItem('posts')) || [];
+    posts.push(post);
+    localStorage.setItem('posts', JSON.stringify(posts));
+
+    alert('Post saved successfully!');
+    loadPosts();
 }
