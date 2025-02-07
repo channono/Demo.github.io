@@ -21,18 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
                                    i18next.t('contact.sending');
 
             try {
-                // Send data to backend server
-                const response = await fetch('/api/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
+                // Read the current messages
+                const response = await fetch('/path/to/messages.json');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
+                const messages = await response.json();
+
+                // Add new message to the list
+                messages.push(formData);
+
+                // Write the updated messages back to the file (note: this requires server-side support, which GitHub Pages does not provide)
+                await fetch('/path/to/messages.json', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(messages)
+                });
 
                 // Show success message
                 alert(i18next.t('contact.messageSent'));
