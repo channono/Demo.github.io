@@ -133,18 +133,33 @@ function savePost() {
         title: document.querySelector("#postTitle").value,
         author: document.querySelector("#postAuthor").value,
         authorTitle: document.querySelector("#postAuthorTitle").value,
-        date: new Date().toISOString().split('T')[0], // current date
-        status: "Draft", // default status
+        date: document.querySelector("#postDate").value,
+        status: document.querySelector("#postStatus").value,
         tags: document.querySelector("#hiddenTags").value.split(","),
-        content: document.querySelector("#hiddenContent").value
+        content: document.querySelector("#hiddenContent").value,
+        image: document.querySelector("#postImage").files[0] ? document.querySelector("#postImage").files[0].name : ""
     };
 
-    let posts = JSON.parse(localStorage.getItem('posts')) || [];
-    posts.push(post);
-    localStorage.setItem('posts', JSON.stringify(posts));
-
-    alert('Post saved successfully!');
-    loadPosts();
+    fetch('save-post.cgi', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(post)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Post saved successfully!');
+            loadPosts();
+        } else {
+            alert('Failed to save post: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Error saving post:', error);
+        alert('Error saving post');
+    });
 }
 
 function loadPosts() {
