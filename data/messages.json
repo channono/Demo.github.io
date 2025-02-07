@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "timestamp": "2025-02-07T19:01:38Z",
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "subject": "Inquiry",
+        "message": "I would like to know more about your services."
+    },
+    {
+        "timestamp": "2025-02-07T18:45:00Z",
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "subject": "Support",
+        "message": "I need help with my account."
+    }
+]
