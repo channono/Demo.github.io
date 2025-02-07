@@ -119,3 +119,26 @@ function savePost() {
     alert('Post saved successfully!');
     loadPosts();
 }
+
+function loadPosts() {
+    const posts = JSON.parse(localStorage.getItem('posts')) || [];
+    const postsContainer = document.querySelector("#postsContainer");
+    postsContainer.innerHTML = "";
+
+    posts.forEach(post => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${post.title}</td>
+            <td>${post.author}</td>
+            <td>${post.authorTitle}</td>
+            <td>${post.date}</td>
+            <td>${post.status}</td>
+            <td>${post.tags.join(", ")}</td>
+            <td>
+                <button class="btn btn-sm btn-warning">Edit</button>
+                <button class="btn btn-sm btn-danger">Delete</button>
+            </td>
+        `;
+        postsContainer.appendChild(row);
+    });
+}
