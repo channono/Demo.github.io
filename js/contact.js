@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 // Read the current messages
-                const response = await fetch('/path/to/messages.json');
+                const response = await fetch('/data/messages.json');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
