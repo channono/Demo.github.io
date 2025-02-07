@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use CGI qw(:standard);
 use JSON;
+use File::Basename;
 
 # Enable CORS
 print header(-type => 'application/json', -access_control_allow_origin => '*');
@@ -24,8 +25,29 @@ if (!$title || !$content || !$author || !$date || !$status) {
     exit;
 }
 
-# Save the post (example, replace with actual saving logic)
+# Handle image upload
+my $image_path = '';
+if ($image) {
+    my $upload_dir = 'uploads/';
+    my $filename = basename($image);
+    $image_path = $upload_dir . $filename;
+
+    open my $out, '>', $image_path or die "Could not open file '$image_path' $!";
+    binmode $out;
+    while (my $bytesread = read($image, my $buffer, 1024)) {
+        print $out $buffer;
+    }
+    close $out;
+}
+
+# Ensure posts.json file exists
 my $posts_file = 'posts.json';
+if (!-e $posts_file) {
+    open my $fh, '>', $posts_file or die "Could not create file '$posts_file' $!";
+    close $fh;
+}
+
+# Save the post
 open my $fh, '>>', $posts_file or die "Could not open file '$posts_file' $!";
 print $fh to_json({
     title => $title,
@@ -35,7 +57,7 @@ print $fh to_json({
     date => $date,
     status => $status,
     tags => [ split /,/, $tags ],
-    image => $image ? $image : ''
+    image => $image_path
 }) . "\n";
 close $fh;
 
