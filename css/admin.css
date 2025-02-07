@@ -1,0 +1,164 @@
+/* Admin Dashboard Styles */
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Navigation */
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.sidebar .nav-link:hover {
+    color: #0056b3;
+}
+
+.sidebar .nav-link i {
+    margin-right: 0.5rem;
+}
+
+/* Main content */
+main {
+    padding-top: 1.5rem;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Tables */
+.table th {
+    border-top: none;
+    background-color: #f8f9fa;
+}
+
+/* Buttons */
+.btn-toolbar .btn {
+    margin-left: 0.5rem;
+}
+
+/* Editor */
+.ql-editor {
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Media Library */
+#imagePreview {
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal */
+.modal-xl .modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    max-width: 90vw;
+    min-height: 90vh;
+    margin: 20px auto;
+    resize: both;
+    overflow: auto;
+}
+
+.modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+/* Make modal draggable */
+.modal-header {
+    cursor: move;
+    user-select: none;
+}
+
+/* Responsive table */
+.table-responsive {
+    margin-top: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Style for resize handle */
+.modal-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    cursor: se-resize;
+    background: linear-gradient(135deg, transparent 50%, #ccc 50%);
+}
+
+/* Ensure form elements have enough spacing */
+.form-group {
+    display:flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    margin-right: 1rem;
+    min-width: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+        padding-top: 0;
+    }
+    
+    main {
+        margin-top: 1rem;
+    }
+}
