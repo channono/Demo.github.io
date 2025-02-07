@@ -9,7 +9,9 @@
       message: document.getElementById('message').value
     }).then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+      alert(i18next.t('contact.messageSent'));
     }, function(error) {
        console.log('FAILED...', error);
+     alert(i18next.t('contact.errorSending'));
     });
   });
