@@ -44,6 +44,7 @@ if ($image) {
 my $posts_file = 'posts.json';
 if (!-e $posts_file) {
     open my $fh, '>', $posts_file or die "Could not create file '$posts_file' $!";
+    print $fh "[]"; # Initialize with an empty JSON array
     close $fh;
 }
 
