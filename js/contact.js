@@ -2,7 +2,7 @@
 
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    emailjs.send("service_mcglihb", "template_950zstd", {
+    emailjs.send("service_62321520", "template_950zstd", {
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
       topic: document.getElementById('topic').value,
