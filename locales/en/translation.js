@@ -996,7 +996,7 @@ const enTranslation = {
         "sales": "Sales",
         "sendMessage": "Send Message",
         "success": "Message sent successfully!",
-        "error": "Failed to send message. Please try again.",
+        "errorSending": "Failed to send message. Please try again.",
         "invalidEmail": "Please enter a valid email address",
         "sending": "Sending...",
         "allFieldsRequired": "All fields are required",
