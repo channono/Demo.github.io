@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 // Read the current messages
-                const response = await fetch('/data/messages.json');
+                const response = await fetch('/website/data/messages.json');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 messages.push(formData);
 
                 // Write the updated messages back to the file (note: this requires server-side support, which GitHub Pages does not provide)
-                await fetch('/path/to/messages.json', {
+                await fetch('/website/data/messages.json', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
