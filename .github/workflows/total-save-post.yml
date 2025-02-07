@@ -1,0 +1,22 @@
+name: Save Post and Update Blog List
+
+on:
+  push:
+    paths:
+      - 'posts/*'
+  workflow_dispatch:
+
+jobs:
+  save_post:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update blog list
+      run: |
+        # Assuming posts are saved in the 'posts' directory
+        echo 'Updating blog list...'
+        node scripts/updateBlogList.js
+        
