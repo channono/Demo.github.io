@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         postForm.addEventListener("submit", function(event) {
             event.preventDefault();
             document.querySelector("#hiddenContent").value = quill.root.innerHTML;
-            this.submit();
+            // Save post data to local storage or another client-side storage
+            savePost();
         });
     }
 
@@ -72,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Load existing posts
+    // Load existing posts from static JSON
     if (document.querySelector("#postsContainer")) {
-        fetch("get_posts.cgi")
+        fetch("posts.json")
             .then(response => response.json())
             .then(posts => {
                 const postsContainer = document.querySelector("#postsContainer");
@@ -97,3 +98,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 });
+
+// Save post function - Example implementation
+function savePost() {
+    const post = {
+        title: document.querySelector("#postTitle").value,
+        author: document.querySelector("#postAuthor").value,
+        authorTitle: document.querySelector("#postAuthorTitle").value,
+        date: new Date().toISOString().split('T')[0], // current date
+        status: "Draft", // default status
+        tags: document.querySelector("#hiddenTags").value.split(","),
+        content: document.querySelector("#hiddenContent").value
+    };
+    // Save post to local storage or other client-side storage
+    // Example: localStorage.setItem('posts', JSON.stringify([...existingPosts, post]));
+}
