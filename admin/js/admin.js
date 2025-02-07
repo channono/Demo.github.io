@@ -25,13 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Handle form submission
         const postForm = document.querySelector("#postForm");
-        postForm.addEventListener("submit", function(event) {
+        postForm.addEventListener("submit", debounce(function(event) {
             event.preventDefault();
             document.querySelector("#hiddenContent").value = quill.root.innerHTML;
             // Save post data to local storage or another client-side storage
             savePost();
-        });
+        }, 300));
     }
+    
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+    
 
     // Handle tag input
     if (document.querySelector("#tagInput")) {
