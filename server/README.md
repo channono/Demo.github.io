@@ -2,26 +2,31 @@
 
 Backend server for handling contact form submissions on the SuperCTRL website.
 
+## Setting Up Node.js
+
+1. **Install Node.js**: Use [nvm](https://github.com/nvm-sh/nvm) to install the Node.js version specified in `.nvmrc`:
+   ```sh
+   nvm install
 ## Setup
 
-1. Install dependencies:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the server:
+3. Start the server:
 ```bash
 npm start
 ```
 
-For development with auto-reload:
+4. For development with auto-reload:
 ```bash
 npm run dev
 ```
 
 ## Environment Variables
 
-Create a `.env` file in the server directory:
+5. Create a `.env` file in the server directory:
 
 ```env
 PORT=3000
