@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/posts.json')
+    fetch('/admin/posts.json')
         .then(response => response.json())
         .then(posts => {
             const postsContainer = document.querySelector("#postsContainer");
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Load existing posts from static JSON
     if (document.querySelector("#postsContainer")) {
-        fetch("posts.json")
+        fetch("/admin/posts.json")
             .then(response => response.json())
             .then(posts => {
                 const postsContainer = document.querySelector("#postsContainer");
