@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadMessages() {
         try {
-            const response = await fetch('/data/messages.json');
+            const response = await fetch('/website/data/messages.json');
             if (!response.ok) {
                 throw new Error('Failed to load messages');
             }
