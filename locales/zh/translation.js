@@ -968,7 +968,7 @@ const zhTranslation = {
         "description": "有任何问题？我们的团队随时为您服务。",
         "sending": "发送中...",
         "messageSent": "谢谢！您的消息已成功发送。",
-        "error": "抱歉，发送消息时出现错误。请重试。",
+        "errorSending": "抱歉，发送消息时出现错误。请重试。",
         "selectSubject": "选择主题",
         "generalInquiry": "一般咨询",
         "technicalSupport": "技术支持",
