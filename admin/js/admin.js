@@ -140,7 +140,7 @@ function savePost() {
         image: document.querySelector("#postImage").files[0] ? document.querySelector("#postImage").files[0].name : ""
     };
 
-    fetch('save-post.cgi', {
+    fetch('/website/admin/save-post.cgi', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
