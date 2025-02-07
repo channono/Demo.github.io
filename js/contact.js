@@ -1,6 +1,6 @@
   emailjs.init("service_62321520");
 
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     emailjs.send("service_mcglihb", "template_950zstd", {
       name: document.getElementById('name').value,
