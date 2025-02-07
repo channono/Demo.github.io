@@ -14,9 +14,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Update blog list
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Generate new blog post
       run: |
-        # Assuming posts are saved in the 'posts' directory
-        echo 'Updating blog list...'
-        node scripts/updateBlogList.js
-        
+        node generateBlogPost.js
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add website/blog/posts/*.html
+        git commit -m 'Add new blog post'
+        git push
