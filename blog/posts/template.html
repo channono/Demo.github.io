@@ -36,15 +36,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="post-meta mb-3">
-                        <span class="date">January 28, 2025</span>
-                        <span class="reading-time">10 min read</span>
+                        <span class="date">{{ publication_date }}</span>
+                        <span class="reading-time">{{ reading_time }} min read</span>
                     </div>
-                    <h1>Topic: Topic Content</h1>
+                    <h1>{{ post_title }}</h1>
                     <div class="author d-flex align-items-center mt-4">
-                        <img src="../../images/blog/author.webp" alt="author" class="author-image me-3">
+                        <img src="../../images/blog/author.webp" alt="{{ author_name }}" class="author-image me-3">
                         <div>
-                            <h6 class="mb-1">author name</h6>
-                            <p class="mb-0 text-muted">author-title</p>
+                            <h6 class="mb-1">{{ author_name }}</h6>
+                            <p class="mb-0 text-muted">{{ author_title }}</p>
                         </div>
                     </div>
                 </div>
@@ -61,18 +61,15 @@
                         <img src="../../images/blog/post-image.webp" alt="[Image Alt Text]" class="img-fluid mb-4 rounded-3">
                         <div class="post-content">
                             <div class="post-meta mb-3">
-                                <span class="date">[Publication Date]</span>
-                                <span class="author">by [Author Name]</span>
-                                <span class="category">[Category]</span>
+                                <span class="date">{{ publication_date }}</span>
+                                <span class="author">by {{ author_name }}</span>
                             </div>
-                            <h1 class="post-title mb-4">[Blog Post Title]</h1>
+                            <h1 class="post-title mb-4">{{ post_title }}</h1>
                             <div class="post-body">
-                                [Blog Post Content]
+                                {{ post_content }}
                             </div>
                             <div class="post-tags mt-4">
-                                <span class="badge bg-light text-dark">[Tag 1]</span>
-                                <span class="badge bg-light text-dark">[Tag 2]</span>
-                                <span class="badge bg-light text-dark">[Tag 3]</span>
+                                {{ post_tags }}
                             </div>
                         </div>
                     </article>
@@ -128,5 +125,6 @@
     <script src="../../locales/zh/translation.js"></script>
     <script src="../../js/i18n.js"></script>
     <script src="../../js/main.js"></script>
+    <script src="../../js/blog-i18n.js"></script>
 </body>
 </html>
