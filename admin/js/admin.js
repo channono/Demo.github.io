@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
+    fetch('/posts.json')
+        .then(response => response.json())
+        .then(posts => {
+            const postsContainer = document.querySelector("#postsContainer");
+            posts.forEach(post => {
+                const row = document.createElement("div");
+                row.innerHTML = `
+                    <h3>${post.title}</h3>
+                    <p>${post.author} - ${post.date}</p>
+                    <p>${post.content}</p>
+                    <hr>
+                `;
+                postsContainer.appendChild(row);
+            });
+    });
+
+
+    
     // Initialize Quill editor
     if (document.querySelector("#editor")) {
         const quill = new Quill("#editor", {
