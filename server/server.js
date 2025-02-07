@@ -1,3 +1,4 @@
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -14,6 +15,10 @@ app.use(bodyParser.json());
 // Serve static files from the website root directory
 const websiteDir = path.join(__dirname, '..');
 app.use(express.static(websiteDir));
+
+// Serve blog posts
+const blogDir = path.join(__dirname, '../blog/post');
+app.use('/blog/post', express.static(blogDir));
 
 // Ensure messages directory exists
 const messagesDir = path.join(__dirname, 'messages');
