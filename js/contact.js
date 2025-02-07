@@ -13,4 +13,3 @@
        console.log('FAILED...', error);
     });
   });
-</script>
