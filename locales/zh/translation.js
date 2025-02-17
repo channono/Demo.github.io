@@ -984,7 +984,7 @@ const zhTranslation = {
         "address": "上海，中国",
         "phone": "+86 021 6232 1520",
         "email": "466719205@qq.com",
-        "copyright": "&copy;2025 上海业控自动化设备有限公司。保留所有权利。",
+        "copyright": "2025 上海业控自动化设备有限公司。保留所有权利。",
         "privacyPolicy": "隐私政策",
         "termsOfService": "服务条款"
     },
