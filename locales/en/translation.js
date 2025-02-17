@@ -1014,7 +1014,7 @@ const enTranslation = {
         "address": " Shanghai, China",
         "phone": " +86 021 6232 1520",
         "email": "466719205@qq.com",
-        "copyright": "&copy; 2025 Shanghai SuperCTRL Automation Co. Ltd. All rights reserved.",
+        "copyright": "&copy;2025 Shanghai SuperCTRL Automation Co. Ltd. All rights reserved.",
         "privacyPolicy": "Privacy Policy",
         "termsOfService": "Terms of Service",
         "demoDisclaimer": "Demo for testing purposes only"
