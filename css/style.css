@@ -1337,6 +1337,10 @@ footer {
 .footer-link:hover {
     color: white;
 }
+.copyright {
+    font-size: 1.1em; /* Match the font size of the surrounding text */
+    vertical-align: baseline; /* Align it with the baseline of the text */
+}
 
 /* Language Switcher */
 .language-switcher {
